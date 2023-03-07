@@ -1,7 +1,7 @@
 function isTriangle(a, b, c) {
-  const secondLonger = a > b ? a : b;
-  const first = secondLonger >= b ? a : b;
-  const longest = c >= secondLonger ? c : secondLonger;
+  const arr = [a, b, c].sort((i, j) => i - j);
 
-  return longest < first + secondLonger;
+  return arr[2] < arr[0] + arr[1];
 }
+
+isTriangle(10, -1, 4);
