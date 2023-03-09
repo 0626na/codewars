@@ -3,5 +3,3 @@ function sumOfSums(k) {
 }
 
 const S = (k) => (k * (k + 1n) * (k + 2n)) / 6n;
-
-console.log(sumOfSums(3n));
